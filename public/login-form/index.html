@@ -1,0 +1,56 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>COMPX500: Frontiers in Information Technolgy, University of Waikato</title>
+    <link rel="icon" type="image/x-icon" href="https://www.waikato.ac.nz/_resources/themes/app/dist/images/favicons/favicon.ico" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main_page">
+      <div class="page_header">
+        <div style="padding-left: 20%; padding-right: 20%; padding-top: 2rem;">	  
+          <span style="margin: 1.5em 0 0 0;">
+            Experimenting with web-form based data
+          </span>
+	 
+        </div>
+      </div>
+      <div class="content_section">
+        <div class="content_section_text" style="padding-left: 25%; padding-right: 25%">
+
+	  
+	  <h3>Enter login credentials:</h3>
+            <form method="POST" action="/submit">
+                  <label for="first">
+                        Username:
+                  </label>
+                  <input type="text" 
+                         id="first" 
+                         name="first" 
+                         placeholder="Enter a MADE-UP Username" required>
+
+                  <label for="password">
+                        Password:
+                  </label>
+                  <input type="password"
+                         id="password" 
+                         name="password"
+                         placeholder="Enter a FAKE Password" required>
+
+                  <div class="wrap">
+                        <button type="submit"
+                                onclick="solve()">
+                              Submit
+                        </button>
+                  </div>
+            </form>	  
+        </div>
+
+      </div>
+    </div>
+    <div class="validator">
+    </div>
+  </body>
+</html>
