@@ -1,3 +1,13 @@
+
+
+Add to your Apache config file:
+
+```
+  ProxyPass / http://localhost:3000/
+  ProxyPassReverse / http://localhost:3000/
+```	
+
+
 Using the `pm2` package to manage your NodeJS server is a great way to ensure that your application runs continuously, even after a crash or server restart. Here’s how you can use `pm2` to start and stop your server:
 
 ### 1. **Install pm2 Globally**
